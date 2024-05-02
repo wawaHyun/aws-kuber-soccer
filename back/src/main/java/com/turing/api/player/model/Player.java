@@ -5,7 +5,7 @@ import jakarta.persistence.*;
 import lombok.*;
 import org.springframework.format.annotation.DateTimeFormat;
 
-import java.time.LocalDate;
+import java.util.Date;
 
 @Entity(name="players")
 @Getter
@@ -25,14 +25,14 @@ public class Player {
     @Column(name = "join_yyyy")
     private String joinYyyy;
     private String position;
-    private Long backNo;
+    private String backNo;
     private String nation;
-
+    @Column
     @DateTimeFormat(pattern = "dd-MMM-yyyy")
-    private LocalDate birthDate;
+    private String birthDate;
     private String solar;
-    private Long height;
-    private Long weight;
+    private String height;
+    private String weight;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "team_id", nullable = true, referencedColumnName = "team_id", foreignKey = @ForeignKey(value = ConstraintMode.NO_CONSTRAINT))

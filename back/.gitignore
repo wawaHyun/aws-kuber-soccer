@@ -13,10 +13,10 @@ build/
 .settings
 .springBeans
 .sts4-cache
+*.yml
 bin/
 !**/src/main/**/bin/
 !**/src/test/**/bin/
-*.yml
 
 ### IntelliJ IDEA ###
 .idea

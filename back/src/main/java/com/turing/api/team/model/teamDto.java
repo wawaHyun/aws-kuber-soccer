@@ -12,13 +12,13 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class teamDto {
+public class TeamDto {
     private Long id;
     private String teamId;
     private String regionName;
     private String teamName;
     private String eTeamName;
-    private String origYYYY;
+    private String origYyyy;
     private String zipCode1;
     private String zipCode2;
     private String address;
